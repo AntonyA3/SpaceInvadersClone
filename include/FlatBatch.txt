@@ -1,0 +1,15 @@
+#ifndef FLATBATCH_HPP
+#define FLATBATCH_HPP
+#include <vector>
+#include "GL/glew.h"
+struct FlatBatch
+{
+    std::vector<float> verticies  = std::vector<float>();
+    std::vector<unsigned int> indicies = std::vector<unsigned int>();
+    int indexOffset = 0;
+    GLuint vertexBuffer;
+    GLuint indexBuffer;
+    GLuint program;
+    GLuint projectionViewMatrixLoc;  
+};
+#endif

@@ -1,0 +1,8 @@
+local KeyState = {
+    [0] = "UP",
+    [1] = "PRESSED",
+    [2] = "RELEASED",
+    [3] = "DOWN"
+};
+
+return KeyState
