@@ -9,10 +9,10 @@ OBJ = $(patsubst $(SRCDIR)%.cpp,%.o,$(wildcard ./src/*.cpp))
 	$(CC) $< -c $(CFLAGS)
 
 install: $(OBJ)
-	$(CC) -o executable/spaceInvaders.exe $(CFLAGS) $(OBJ) $(LIBS) 
+	$(CC) -o spaceInvaders.exe $(CFLAGS) $(OBJ) $(LIBS) 
 
 run:
-	.\executable\spaceInvaders.exe
+	.\spaceInvaders.exe
 	
 clean:
 	-rm *o spaceInvaders.exe
